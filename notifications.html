@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper/swiper-bundle.min.css" />
+    <!-- Font Awesome Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome/all.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="assets/libraries/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/dashboard/dashboard-main.css" />
+    <title>Notifications</title>
+    <style>
+      /* usman haider */
+
+      /* usman haider */
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- ======= Header ======= -->
+      <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="dahboard.html" class="logo d-flex align-items-center">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <i class="toggle-sidebar-btn fal fa-bars"></i>
+        </div>
+        <!-- End Logo -->
+        <div class="search-bar">
+          <form
+            class="search-form d-flex align-items-center"
+            method="POST"
+            action="#"
+          >
+            <input
+              type="text"
+              name="query"
+              placeholder="Search"
+              title="Enter search keyword"
+            />
+            <button type="submit" title="Search">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- End Search Bar -->
+        <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link nav-icon search-bar-toggle" href="#">
+                <i class="fa-regular fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <!-- End Search Icon-->
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25.284"
+                  height="28"
+                  viewBox="0 0 25.284 28"
+                >
+                  <g data-name="Iconly/Curved/Setting">
+                    <path
+                      data-name="Stroke 1"
+                      d="M12.921 9.5A3.421 3.421 0 1 1 9.5 12.921 3.421 3.421 0 0 1 12.921 9.5z"
+                      transform="translate(-.279 1.079)"
+                      style="
+                        fill: none;
+                        stroke: #000;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                        fill-rule: evenodd;
+                      "
+                    />
+                    <path
+                      data-name="Stroke 3"
+                      d="M26.309 9h0a3.371 3.371 0 0 0-4.625-1.248 2.112 2.112 0 0 1-3.167-1.842 3.4 3.4 0 0 0-3.386-3.41h0a3.4 3.4 0 0 0-3.386 3.41A2.111 2.111 0 0 1 8.58 7.753 3.373 3.373 0 0 0 3.954 9a3.423 3.423 0 0 0 1.24 4.658 2.135 2.135 0 0 1 0 3.684A3.424 3.424 0 0 0 3.954 22a3.373 3.373 0 0 0 4.625 1.249h0a2.11 2.11 0 0 1 3.166 1.841h0a3.4 3.4 0 0 0 3.386 3.41h0a3.4 3.4 0 0 0 3.386-3.41h0a2.111 2.111 0 0 1 3.167-1.841A3.373 3.373 0 0 0 26.309 22a3.424 3.424 0 0 0-1.239-4.658h0a2.135 2.135 0 0 1 0-3.684A3.423 3.423 0 0 0 26.309 9z"
+                      transform="translate(-2.49 -1.5)"
+                      style="
+                        fill: none;
+                        stroke: #000;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                        fill-rule: evenodd;
+                      "
+                    />
+                  </g>
+                </svg>
+              </a>
+              <!-- End Messages Icon -->
+              <ul
+                class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+              >
+                <li class="dropdown-header">
+                  You have 3 new messages
+                  <a href="#"
+                    ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                      >View all</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <img
+                      src="assets/images/messages-1.jpg"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                    <div>
+                      <h4>Maria Hudson</h4>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <p>4 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <img
+                      src="assets/images/messages-2.jpg"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                    <div>
+                      <h4>Anna Nelson</h4>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <p>6 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <img
+                      src="assets/images/messages-3.jpg"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                    <div>
+                      <h4>David Muldon</h4>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <p>8 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="dropdown-footer">
+                  <a href="#">Show all messages</a>
+                </li>
+              </ul>
+              <!-- End Messages Dropdown Items -->
+            </li>
+            <!-- End Messages Nav -->
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25.404"
+                  height="31"
+                  viewBox="0 0 25.404 31"
+                >
+                  <g data-name="Group 108">
+                    <g data-name="Icon feather-bell">
+                      <path
+                        data-name="Path 158"
+                        d="M24 10.8a7.8 7.8 0 1 0-15.6 0c0 9.1-3.9 11.7-3.9 11.7h23.4S24 19.9 24 10.8"
+                        style="
+                          stroke-width: 2px;
+                          stroke: #000;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          fill: none;
+                        "
+                        transform="translate(-3.5 1)"
+                      />
+                      <path
+                        data-name="Path 159"
+                        d="M19.9 31.5a2.6 2.6 0 0 1-4.5 0"
+                        transform="translate(-4.952 -2.796)"
+                        style="
+                          stroke-width: 2px;
+                          stroke: #000;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          fill: none;
+                        "
+                      />
+                    </g>
+                    <g
+                      data-name="Ellipse 33"
+                      transform="translate(15 2)"
+                      style="fill: #f2a921; stroke: #fff; stroke-width: 2px"
+                    >
+                      <circle cx="4" cy="4" r="4" style="stroke: none" />
+                      <circle cx="4" cy="4" r="5" style="fill: none" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <!-- End Notification Icon -->
+              <ul
+                class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications custom-notifications-dropdown-styles"
+              >
+                <li
+                  class="dropdown-header notifications-text dropdown-header-custom-styles"
+                >
+                  Notifications
+                  <button
+                    class="mark-all-read-btn filter-by mark-all-read-custom"
+                  >
+                    <img src="./assets/icons/tickBlue.svg" />Mark as all Read
+                  </button>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="notification-item max-width">
+                  <div class="notification-container" style="margin-top: 24px">
+                    <div class="avatar-section">
+                      <img
+                        src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                        style="height: 42px; width: 42px"
+                      />
+                      <div style="margin-left: 19.5px">
+                        <span class="David-Heree-joined-to-Final-Presentation">
+                          David Heree
+                          <span class="text-style-1">joined to</span>
+                          Final Presentation
+                        </span>
+                        <span class="h-ago-Social-Media-Plan">
+                          2h ago ~ Social Media Plan
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr style="background: #cdd6de" />
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="notification-item max-width">
+                  <div class="notification-container" style="margin-top: 24px">
+                    <div class="avatar-section">
+                      <img
+                        src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                        style="height: 42px; width: 42px"
+                      />
+                      <div style="margin-left: 19.5px">
+                        <span class="David-Heree-joined-to-Final-Presentation">
+                          David Heree
+                          <span class="text-style-1">joined to</span>
+                          Final Presentation
+                        </span>
+                        <span class="h-ago-Social-Media-Plan">
+                          2h ago ~ Social Media Plan
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr style="background: #cdd6de" />
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="notification-item max-width">
+                  <div class="notification-container" style="margin-top: 24px">
+                    <div class="avatar-section">
+                      <img
+                        src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                        style="height: 42px; width: 42px"
+                      />
+                      <div style="margin-left: 19.5px">
+                        <span class="David-Heree-joined-to-Final-Presentation">
+                          David Heree
+                          <span class="text-style-1">joined to</span>
+                          Final Presentation
+                        </span>
+                        <span class="h-ago-Social-Media-Plan">
+                          2h ago ~ Social Media Plan
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr style="background: #cdd6de" />
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="notification-item max-width">
+                  <div class="notification-container" style="margin-top: 24px">
+                    <div class="avatar-section">
+                      <img
+                        src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                        style="height: 42px; width: 42px"
+                      />
+                      <div style="margin-left: 19.5px">
+                        <span class="David-Heree-joined-to-Final-Presentation">
+                          David Heree
+                          <span class="text-style-1">joined to</span>
+                          Final Presentation
+                        </span>
+                        <span class="h-ago-Social-Media-Plan">
+                          2h ago ~ Social Media Plan
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <hr style="background: #cdd6de" />
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="dropdown-footer">
+                  <a
+                    class="show-all-nofitications-styles notifications-text"
+                    href="#"
+                    >Show all notifications</a
+                  >
+                </li>
+              </ul>
+              <!-- End Notification Dropdown Items -->
+            </li>
+            <!-- End Notification Nav -->
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                >
+                  <g data-name="Group 931">
+                    <g data-name="Group 930">
+                      <path
+                        data-name="Path 1286"
+                        d="M13.5 27A13.5 13.5 0 1 1 27 13.5 13.54 13.54 0 0 1 13.5 27zm0-24.75A11.25 11.25 0 1 0 24.75 13.5 11.283 11.283 0 0 0 13.5 2.25z"
+                      />
+                    </g>
+                  </g>
+                  <g data-name="Group 933">
+                    <g data-name="Group 932">
+                      <path
+                        data-name="Path 1287"
+                        d="M13.5 17.999a1.063 1.063 0 0 1-1.125-1.125v-.787a4.538 4.538 0 0 1 2.25-3.937 2.113 2.113 0 0 0 1.125-2.363 2.148 2.148 0 0 0-1.8-1.8 2.352 2.352 0 0 0-1.913.45 2.2 2.2 0 0 0-.787 1.687 1.063 1.063 0 0 1-1.125 1.125A1.063 1.063 0 0 1 9 10.124a4.613 4.613 0 0 1 1.575-3.487 4.424 4.424 0 0 1 3.712-1.013 4.565 4.565 0 0 1 3.6 3.6 4.457 4.457 0 0 1-2.25 4.725 2.15 2.15 0 0 0-1.012 2.025v.9a1.063 1.063 0 0 1-1.125 1.125z"
+                      />
+                    </g>
+                  </g>
+                  <g data-name="Group 936">
+                    <g
+                      data-name="Group 934"
+                      transform="translate(12.376 19.126)"
+                    >
+                      <ellipse
+                        data-name="Ellipse 77"
+                        cx="1.5"
+                        cy="1"
+                        rx="1.5"
+                        ry="1"
+                        transform="translate(-.375 -.125)"
+                      />
+                    </g>
+                    <g data-name="Group 935">
+                      <path
+                        data-name="Path 1288"
+                        d="M13.501 21.938a1.688 1.688 0 1 1 1.688-1.687 1.73 1.73 0 0 1-1.688 1.687zm0-2.25a.563.563 0 1 0 .563.563.531.531 0 0 0-.563-.563z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <!-- End Messages Icon -->
+              <ul
+                class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+              >
+                <li class="dropdown-header">
+                  You have 3 new messages
+                  <a href="#"
+                    ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                      >View all</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <img
+                      src="assets/images/messages-1.jpg"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                    <div>
+                      <h4>Maria Hudson</h4>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <p>4 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <img
+                      src="assets/images/messages-2.jpg"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                    <div>
+                      <h4>Anna Nelson</h4>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <p>6 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <img
+                      src="assets/images/messages-3.jpg"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                    <div>
+                      <h4>David Muldon</h4>
+                      <p>
+                        Velit asperiores et ducimus soluta repudiandae labore
+                        officia est ut...
+                      </p>
+                      <p>8 hrs. ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="dropdown-footer">
+                  <a href="#">Show all messages</a>
+                </li>
+              </ul>
+              <!-- End Messages Dropdown Items -->
+            </li>
+            <!-- End Messages Nav -->
+            <li class="nav-item dropdown pe-3">
+              <a
+                class="nav-link nav-profile d-flex align-items-center pe-0"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  src="assets/images/dashboard/profile-img.png"
+                  alt="Profile"
+                />
+                <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+              </a>
+              <!-- End Profile Iamge Icon -->
+              <ul
+                class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+              >
+                <li class="dropdown-header">
+                  <h6>Kevin Anderson</h6>
+                  <span>Web Designer</span>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="users-profile.html"
+                  >
+                    <i class="bi bi-person"></i>
+                    <span>My Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="users-profile.html"
+                  >
+                    <i class="bi bi-gear"></i>
+                    <span>Account Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="pages-faq.html"
+                  >
+                    <i class="bi bi-question-circle"></i>
+                    <span>Need Help?</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Profile Dropdown Items -->
+            </li>
+            <!-- End Profile Nav -->
+          </ul>
+        </nav>
+        <!-- End Icons Navigation -->
+      </header>
+      <!-- End Header -->
+      <!-- ======= Sidebar ======= -->
+      <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dahboard.html">
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="17.857"
+                viewBox="0 0 20 17.857"
+              >
+                <path
+                  data-name="dashboard-svgrepo-com (4)"
+                  d="M83.214 118.107a10 10 0 1 0-15.645 11.551l.038.031a.724.724 0 0 0 .46.167h11.868a.724.724 0 0 0 .46-.167l.038-.031a10.015 10.015 0 0 0 2.781-11.551zm-9.884-3.429a.179.179 0 0 1 .179-.179h.982a.179.179 0 0 1 .179.179v1.786a.179.179 0 0 1-.179.179h-.982a.179.179 0 0 1-.179-.179zm-4.73 7.813a.179.179 0 0 1-.179.179h-1.787a.179.179 0 0 1-.179-.179v-.982a.179.179 0 0 1 .179-.179h1.786a.179.179 0 0 1 .179.179zm2.025-4.565-.694.694a.179.179 0 0 1-.252 0l-1.263-1.263a.179.179 0 0 1 0-.252l.694-.694a.179.179 0 0 1 .252 0l1.263 1.263a.179.179 0 0 1-.002.252zm6.5 1.866-1.886 1.886a1.25 1.25 0 1 1-.884-.884l1.886-1.886a.179.179 0 0 1 .252 0l.632.632a.179.179 0 0 1-.004.252zm.96-1.17-.694-.694a.179.179 0 0 1 0-.252l1.263-1.263a.179.179 0 0 1 .252 0l.694.694a.179.179 0 0 1 0 .252l-1.263 1.263a.179.179 0 0 1-.257.001zm3.375 3.868a.179.179 0 0 1-.179.179h-1.79a.179.179 0 0 1-.179-.179v-.982a.179.179 0 0 1 .179-.179h1.786a.179.179 0 0 1 .179.179z"
+                  transform="translate(-64 -112)"
+                  style="fill: #fff"
+                />
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <!-- End Dashboard Nav -->
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#components-nav"
+              data-bs-toggle="collapse"
+              href="#"
+            >
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21.031"
+                viewBox="0 0 20 21.031"
+              >
+                <g data-name="Group 937">
+                  <path
+                    data-name="Path 1290"
+                    d="m20 18.104-.74-3.191a3.071 3.071 0 0 0-.8-.587 48.606 48.606 0 0 0-4.779-2.077.6.6 0 0 1-.316-.244 5.34 5.34 0 0 1-.212-.57 1.141 1.141 0 0 1-.376.28l-.743.342a1.149 1.149 0 0 1-1.525-.563l-.138-.3a4.93 4.93 0 0 1-.81.031l-.115.311a1.15 1.15 0 0 1-1.077.751 1.154 1.154 0 0 1-.4-.071l-.767-.283a1.14 1.14 0 0 1-.508-.376c-.049.145-.1.288-.158.43a.446.446 0 0 1-.21.218c-.5.218-1.016.42-1.523.632-.539.227-1.084.444-1.611.694-.543.26-1.071.552-1.6.838a3.924 3.924 0 0 0-.85.583l-.74 3.151c3.6 0 5.487 2.607 9.237 2.928l-1.384-1.907 2.143-5.859-.663-1.424h1.328l-.665 1.424 2.146 5.859-1.348 1.861c2.73-.457 7.09-2.881 9.204-2.881z"
+                  />
+                  <path
+                    data-name="Path 1291"
+                    d="m4.425 4.985.607.224a4.626 4.626 0 0 0 .051 1.342l-.586.27a.731.731 0 0 0-.358.969l.342.743a.731.731 0 0 0 .969.358l.586-.27a4.611 4.611 0 0 0 .987.911l-.224.606a.731.731 0 0 0 .432.939l.767.283a.73.73 0 0 0 .938-.432l.224-.607a4.616 4.616 0 0 0 1.342-.051l.27.586a.731.731 0 0 0 .968.358l.743-.342a.731.731 0 0 0 .358-.972l-.27-.586a4.631 4.631 0 0 0 .911-.986l.607.224a.731.731 0 0 0 .939-.432l.283-.767a.731.731 0 0 0-.432-.938l-.607-.224a4.625 4.625 0 0 0-.051-1.342l.586-.27a.731.731 0 0 0 .358-.969l-.342-.742a.731.731 0 0 0-.968-.358l-.586.27a4.616 4.616 0 0 0-.987-.911l.224-.606a.731.731 0 0 0-.432-.938l-.769-.283a.748.748 0 0 0-.938.432l-.224.607a4.632 4.632 0 0 0-1.341.051l-.27-.586a.731.731 0 0 0-.969-.358L6.82.53a.732.732 0 0 0-.358.969l.27.586a4.636 4.636 0 0 0-.911.987l-.606-.224a.748.748 0 0 0-.939.432l-.283.767a.73.73 0 0 0 .431.938zM8.6 3.419a2.512 2.512 0 1 1-1.231 3.333A2.512 2.512 0 0 1 8.6 3.418z"
+                  />
+                </g>
+              </svg>
+              <span> User Management </span
+              ><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul
+              id="components-nav"
+              class="nav-content collapse"
+              data-bs-parent="#sidebar-nav"
+            >
+              <li>
+                <a href="components-alerts.html">
+                  <i class="bi bi-circle"></i><span>Alerts</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-accordion.html">
+                  <i class="bi bi-circle"></i><span>Accordion</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-badges.html">
+                  <i class="bi bi-circle"></i><span>Badges</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-buttons.html">
+                  <i class="bi bi-circle"></i><span>Buttons</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-cards.html">
+                  <i class="bi bi-circle"></i><span>Cards</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-carousel.html">
+                  <i class="bi bi-circle"></i><span>Carousel</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-list-group.html">
+                  <i class="bi bi-circle"></i><span>List group</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-modal.html">
+                  <i class="bi bi-circle"></i><span>Modal</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-tabs.html">
+                  <i class="bi bi-circle"></i><span>Tabs</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-pagination.html">
+                  <i class="bi bi-circle"></i><span>Pagination</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-progress.html">
+                  <i class="bi bi-circle"></i><span>Progress</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-spinners.html">
+                  <i class="bi bi-circle"></i><span>Spinners</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-tooltips.html">
+                  <i class="bi bi-circle"></i><span>Tooltips</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- End Components Nav -->
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#forms-nav"
+              data-bs-toggle="collapse"
+              href="#"
+            >
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="17.381"
+                viewBox="0 0 20 17.381"
+              >
+                <g data-name="Group 939">
+                  <g data-name="Group 938">
+                    <path
+                      data-name="Path 1292"
+                      d="m1.633 12.665-.047-.045A2.335 2.335 0 0 1 .9 10.958V.641A1.274 1.274 0 0 1 1.072 0H.641A.641.641 0 0 0 0 .641v10.317a1.709 1.709 0 0 0 1.633 1.707z"
+                    />
+                    <path
+                      data-name="Path 1293"
+                      d="M9.967 2.264c-.808 0-1.326.7-1.326 1.843s.518 1.89 1.326 1.89 1.326-.737 1.326-1.89-.518-1.843-1.326-1.843z"
+                    />
+                    <path
+                      data-name="Path 1294"
+                      d="M14.168 5.667a5.013 5.013 0 0 1 1.043.309c.581-.064.9-.343.9-.849 0-.533-.408-.784-1.177-.784h-.766v1.325z"
+                    />
+                    <path
+                      data-name="Path 1295"
+                      d="M15.842 2.938c0-.471-.337-.667-1-.667h-.676v1.424h.651c.719 0 1.025-.279 1.025-.757z"
+                    />
+                    <path
+                      data-name="Path 1296"
+                      d="M3.248 12.667h5.377l-.023-.052a5.024 5.024 0 0 1-.4-1.863H3.969a.321.321 0 1 1 0-.641h4.263a5.007 5.007 0 0 1 .32-1.312H3.969a.321.321 0 1 1 0-.641h4.888a5.052 5.052 0 0 1 .829-1.09q.146-.146.3-.278h-.021c-1.333 0-2.259-1.02-2.259-2.683s.926-2.636 2.259-2.636 2.267.98 2.267 2.636a3.164 3.164 0 0 1-.431 1.693 5.042 5.042 0 0 1 1.458-.214v-4.02h1.639c1.059 0 1.835.322 1.835 1.263a1.121 1.121 0 0 1-.879 1.114v.031a1.178 1.178 0 0 1 1.145 1.216 1.339 1.339 0 0 1-.851 1.3 5.079 5.079 0 0 1 1.714 2.037l.064.145a5.074 5.074 0 0 1 0 3.939l-.016.037a1.709 1.709 0 0 0 1.491-1.695V.641A.641.641 0 0 0 18.76 0H2.18a.641.641 0 0 0-.641.641v10.317a1.709 1.709 0 0 0 1.709 1.709zm1.016-7.211a.9.9 0 0 0 .8.541c.478 0 .722-.259.722-.988V1.565h.91v3.522a1.493 1.493 0 0 1-1.53 1.7 1.622 1.622 0 0 1-1.53-.871z"
+                    />
+                    <path
+                      data-name="Path 1297"
+                      d="M16.842 14.223a5.069 5.069 0 0 1-.82.665l2.182 2.186a1.05 1.05 0 0 0 1.485-1.485l-2.186-2.186a5.069 5.069 0 0 1-.661.82z"
+                    />
+                    <path
+                      data-name="Path 1298"
+                      d="M9.248 8.799a4.388 4.388 0 0 0-.371 1.312 4.459 4.459 0 0 0-.032.534v.107a4.4 4.4 0 0 0 .487 1.915q.085.164.183.32t.221.321a4.417 4.417 0 0 0 7.053 0q.117-.155.221-.32l.031-.049q.081-.133.152-.271a4.418 4.418 0 0 0-3.93-6.44A4.424 4.424 0 0 0 9.25 8.8z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <span> Job Portal </span>
+              <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul
+              id="forms-nav"
+              class="nav-content collapse"
+              data-bs-parent="#sidebar-nav"
+            >
+              <li>
+                <a href="forms-elements.html">
+                  <i class="bi bi-circle"></i><span>Form Elements</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-layouts.html">
+                  <i class="bi bi-circle"></i><span>Form Layouts</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-editors.html">
+                  <i class="bi bi-circle"></i><span>Form Editors</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-validation.html">
+                  <i class="bi bi-circle"></i><span>Form Validation</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- End Forms Nav -->
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#tables-nav"
+              data-bs-toggle="collapse"
+              href="#"
+            >
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16.109"
+                height="21.288"
+                viewBox="0 0 16.109 21.288"
+              >
+                <g data-name="Group 940">
+                  <path
+                    data-name="Path 1299"
+                    d="m3.181 14.669.544-.544h3.98L5.166 9.537l-1.878.382a1.321 1.321 0 0 0-1.014.957l-2.23 7.276a1.321 1.321 0 0 0 1.276 1.657h1.86v-5.14z"
+                  />
+                  <path
+                    data-name="Path 1300"
+                    d="m16.064 18.152-2.229-7.276a1.322 1.322 0 0 0-1.031-.96l-1.871-.354-2.529 4.563h4.28l.544.544v5.139h1.56a1.319 1.319 0 0 0 1.276-1.656z"
+                  />
+                  <path
+                    data-name="Path 1301"
+                    d="M4.269 19.81h-.151 8.021v-4.595h-7.87z"
+                  />
+                  <path
+                    data-name="Rectangle 357"
+                    d="M2.096 20.304h11.916v.984H2.096z"
+                  />
+                  <path
+                    data-name="Path 1302"
+                    d="M3.812 6.327c.021.043.049.109.077.178a1.792 1.792 0 0 0 .34.607 4.319 4.319 0 0 0 3.822 3.333 4.289 4.289 0 0 0 3.773-3.361 1.807 1.807 0 0 0 .331-.605c.028-.07.054-.137.075-.18a.981.981 0 0 0-.166-1.206v-.046C12.058 2.6 11.74-.013 8.015 0 4.265.012 3.96 2.513 3.968 5.074v.045a.983.983 0 0 0-.156 1.208zm.523-.788h.011a.273.273 0 0 0 .142-.12l.649.1a.139.139 0 0 0 .148-.082l.41-.948a17.655 17.655 0 0 0 3.6.5 3.879 3.879 0 0 0 1.056-.123l.26.628a.137.137 0 0 0 .127.085.16.16 0 0 0 .037-.005l.756-.212a.28.28 0 0 0 .156.147h.01c.112.056.149.3.031.545-.028.059-.058.133-.091.212a2.092 2.092 0 0 1-.2.41.276.276 0 0 0-.129.166 3.769 3.769 0 0 1-3.269 3.046A3.8 3.8 0 0 1 4.73 6.869a.275.275 0 0 0-.13-.164 2.151 2.151 0 0 1-.2-.412 3.528 3.528 0 0 0-.092-.209c-.121-.244-.086-.489.032-.546z"
+                  />
+                </g>
+              </svg>
+              <span> Events </span>
+            </a>
+            <ul
+              id="tables-nav"
+              class="nav-content collapse"
+              data-bs-parent="#sidebar-nav"
+            >
+              <li>
+                <a href="tables-general.html">
+                  <i class="bi bi-circle"></i><span>General Tables</span>
+                </a>
+              </li>
+              <li>
+                <a href="tables-data.html">
+                  <i class="bi bi-circle"></i><span>Data Tables</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- End Tables Nav -->
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#charts-nav"
+              data-bs-toggle="collapse"
+              href="#"
+            >
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15.453"
+                height="18.227"
+                viewBox="0 0 15.453 18.227"
+              >
+                <g data-name="Group 941">
+                  <path
+                    data-name="Path 1305"
+                    d="M15.172.089a.6.6 0 0 0-.579-.026l-2.111 1.056L10.37.063a.6.6 0 0 0-.532 0L7.727 1.119 5.615.063a.6.6 0 0 0-.532 0L2.972 1.119.86.063A.594.594 0 0 0 0 .595v15.85a.6.6 0 0 0 .329.532l2.377 1.189a.6.6 0 0 0 .532 0L5.35 17.11l2.112 1.056a.6.6 0 0 0 .532 0l2.112-1.056 2.112 1.056a.595.595 0 0 0 .532 0l2.377-1.189a.6.6 0 0 0 .329-.532V.595a.6.6 0 0 0-.284-.506zm-12.2 3.477h3.171a.595.595 0 1 1 0 1.189h-3.17a.595.595 0 1 1 0-1.189zm0 2.377h3.171a.595.595 0 1 1 0 1.189h-3.17a.595.595 0 1 1 0-1.189zm0 2.377h3.171a.595.595 0 1 1 0 1.189h-3.17a.595.595 0 1 1 0-1.189zm0 2.377h3.171a.595.595 0 1 1 0 1.189h-3.17a.595.595 0 1 1 0-1.189zm0 3.962H1.783a.595.595 0 1 1 0-1.189h1.189a.595.595 0 0 1 0 1.189zm3.566 0H5.349a.595.595 0 1 1 0-1.189h1.189a.595.595 0 0 1 0 1.189zm3.566 0H8.915a.595.595 0 0 1 0-1.189h1.189a.595.595 0 1 1 0 1.189zm1.387-3.368a.595.595 0 1 1-1.189 0v-.283a2.182 2.182 0 0 1-1.585-2.095.595.595 0 0 1 1.189 0 .991.991 0 1 0 1.981 0c0-.389-.645-.73-1.268-1.059-.847-.448-1.9-1.005-1.9-2.111a2.182 2.182 0 0 1 1.585-2.095v-.28a.595.595 0 1 1 1.189 0v.283a2.182 2.182 0 0 1 1.585 2.095.595.595 0 0 1-1.189 0 .991.991 0 1 0-1.981 0c0 .389.645.73 1.268 1.06.847.448 1.9 1.005 1.9 2.11a2.182 2.182 0 0 1-1.585 2.095zm2.179 3.368h-1.188a.595.595 0 1 1 0-1.189h1.189a.595.595 0 0 1 0 1.189z"
+                  />
+                </g>
+              </svg>
+              <span>Billing History </span
+              ><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul
+              id="charts-nav"
+              class="nav-content collapse"
+              data-bs-parent="#sidebar-nav"
+            >
+              <li>
+                <a href="charts-chartjs.html">
+                  <i class="bi bi-circle"></i><span>Chart.js</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-apexcharts.html">
+                  <i class="bi bi-circle"></i><span>ApexCharts</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-echarts.html">
+                  <i class="bi bi-circle"></i><span>ECharts</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- End Charts Nav -->
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#icons-nav"
+              data-bs-toggle="collapse"
+              href="#"
+            >
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.151"
+                height="17.056"
+                viewBox="0 0 17.151 17.056"
+              >
+                <path
+                  d="m16.586 11.14-.652-.27V.455A.463.463 0 0 0 15.467 0H4.432a.46.46 0 0 0-.464.455v3.7H.45a.431.431 0 0 0-.45.43v11.037a.433.433 0 0 0 .45.436h11.035c.013 0 .026.01.038.009l.312.537a.914.914 0 0 0 1.676-.228l.66-2.532 2.415-1.009a.916.916 0 0 0 0-1.692zM4.884 5.067h6.1v3.787l-2.409-1a.867.867 0 0 0-.339-.069.905.905 0 0 0-.687.315.929.929 0 0 0-.1 1.073l1.1 1.876H4.884zM15.018.916v9.577L11.966 9.26V4.365a.419.419 0 0 0-.409-.458H4.884V.916zM.916 15.14V5.067h3.052v6.423a.478.478 0 0 0 .464.476H9.1l1.889 3.175z"
+                />
+              </svg>
+              <span> Role Permissions </span
+              ><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul
+              id="icons-nav"
+              class="nav-content collapse"
+              data-bs-parent="#sidebar-nav"
+            >
+              <li>
+                <a href="icons-bootstrap.html">
+                  <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+                </a>
+              </li>
+              <li>
+                <a href="icons-remix.html">
+                  <i class="bi bi-circle"></i><span>Remix Icons</span>
+                </a>
+              </li>
+              <li>
+                <a href="icons-boxicons.html">
+                  <i class="bi bi-circle"></i><span>Boxicons</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- End Icons Nav -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="users-profile.html">
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16.444"
+                height="16.443"
+                viewBox="0 0 16.444 16.443"
+              >
+                <g transform="translate(-.999)">
+                  <circle
+                    data-name="Ellipse 78"
+                    cx="1.37"
+                    cy="1.37"
+                    r="1.37"
+                    transform="translate(1.913 10.962)"
+                  />
+                  <circle
+                    data-name="Ellipse 79"
+                    cx=".913"
+                    cy=".913"
+                    r=".913"
+                    transform="translate(1 14.616)"
+                  />
+                  <path
+                    data-name="Path 1307"
+                    d="M17.434 5.7A5.008 5.008 0 0 0 12.629.923a4.536 4.536 0 0 0-1.27.247l-.137-.11A4.509 4.509 0 0 0 8.308 0a4.556 4.556 0 0 0-2.686.868h-.055A4.567 4.567 0 0 0 1 5.435a1 1 0 0 0 .018.238A1.248 1.248 0 0 0 1 5.938a5.024 5.024 0 0 0 5.024 5.024 4.41 4.41 0 0 0 .694-.055 5.007 5.007 0 0 0 5.856.046 5.012 5.012 0 0 0 4.869-5.015 1.985 1.985 0 0 0-.009-.238zM4.654 2.74h5.481a.913.913 0 0 1 0 1.827H4.654a.913.913 0 1 1 0-1.827zm9.135 5.46H4.654a.913.913 0 1 1 0-1.827h9.135a.913.913 0 1 1 0 1.827z"
+                    style="fill-rule: evenodd"
+                  />
+                </g>
+              </svg>
+              <span>Blogs</span>
+            </a>
+          </li>
+          <!-- End Profile Page Nav -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="pages-faq.html">
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.151"
+                height="17.049"
+                viewBox="0 0 17.151 17.049"
+              >
+                <path
+                  data-name="Path 1308"
+                  d="m13.085 10.64-2.052-.611a2.389 2.389 0 0 1-4.017 0l-2.052.611a.938.938 0 0 0-.67.9v.779a4.731 4.731 0 1 0 9.461 0v-.779a.938.938 0 0 0-.67-.9z"
+                />
+                <path
+                  data-name="Path 1309"
+                  d="M9 0A8.161 8.161 0 0 0 .847 8.152a8.068 8.068 0 0 0 .363 2.36l-.693-.114a.445.445 0 0 0-.379.761l2.029 1.934a.661.661 0 0 0 1.113-.4l.31-2.787a.445.445 0 0 0-.78-.339l-.506.59a6.911 6.911 0 0 1-.3-2 7 7 0 0 1 14 0 6.908 6.908 0 0 1-.8 3.245.576.576 0 0 0 1.02.535 8.052 8.052 0 0 0 .933-3.781A8.161 8.161 0 0 0 9 0z"
+                />
+                <path
+                  data-name="Path 1310"
+                  d="M5.979 8.15a.838.838 0 0 0 .634.362c.5 1.144 1.379 2.127 2.383 2.127s1.884-.983 2.383-2.127a.838.838 0 0 0 .634-.362 1.46 1.46 0 0 0 .237-.43 1.3 1.3 0 0 0 .021-.853.6.6 0 0 0-.348-.385.355.355 0 0 1-.083.021h-.027a.342.342 0 0 1-.149-.039.355.355 0 0 1-.189-.216c-.007-.024-.186-.579-1.243-.579q-.152 0-.322.016s-.11.01-.281.01a2.378 2.378 0 0 1-1.739-.561 1.078 1.078 0 0 1-.2-.328A2.677 2.677 0 0 0 6.521 6.26a.372.372 0 0 1-.337.252h-.041a.338.338 0 0 1-.08-.024.6.6 0 0 0-.341.381 1.3 1.3 0 0 0 .021.853 1.463 1.463 0 0 0 .236.428z"
+                />
+                <path
+                  data-name="Path 1311"
+                  d="M7.968 4.258C7.861 5.233 9.087 5.34 9.63 5.34c.152 0 .251-.008.251-.008a3.69 3.69 0 0 1 .352-.017c1.375 0 1.582.839 1.582.839l.085-.632a2.443 2.443 0 0 0-2.07-2.744 1.615 1.615 0 0 0-1.41.493l-.023.025a1.532 1.532 0 0 0-1.52.141 1.784 1.784 0 0 0-.754 1.548l.059 1.172a3.221 3.221 0 0 1 1.786-1.899z"
+                />
+              </svg>
+              <span>Profile Settings</span>
+            </a>
+          </li>
+          <!-- End F.A.Q Page Nav -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="pages-contact.html">
+              <svg
+                class="me-3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12.466"
+                height="16.606"
+                viewBox="0 0 12.466 16.606"
+              >
+                <path
+                  data-name="Path 1312"
+                  d="m11.712 1.911.669-1.273A.435.435 0 0 0 11.997 0H.435A.435.435 0 0 0 0 .435v16.171h12.466V3.41zm-2.275 11.03a1.538 1.538 0 0 1-1.55.087h-.009a10.624 10.624 0 0 1-2.977-2.055 10.637 10.637 0 0 1-2.058-2.98v-.009a1.539 1.539 0 0 1 .087-1.55A1.748 1.748 0 0 1 4.179 5.7a.263.263 0 0 1 .176.077l.017.018 1.444 1.736a.263.263 0 0 1 .057.214 1.362 1.362 0 0 1-.367.717l-.095.1a1.443 1.443 0 0 1-.307.239l-.108.062.072.1a7.948 7.948 0 0 0 1.835 1.835l.1.072.062-.108a1.409 1.409 0 0 1 .24-.307l.1-.094a1.363 1.363 0 0 1 .717-.367.262.262 0 0 1 .214.057l1.736 1.444a.26.26 0 0 1 .094.193 1.748 1.748 0 0 1-.729 1.253zM.87 3.391V.87h10.406l-.44.836a.435.435 0 0 0 0 .4l.663 1.283z"
+                />
+              </svg>
+              <span>Contact Us</span>
+            </a>
+          </li>
+          <!-- End Contact Page Nav -->
+        </ul>
+      </aside>
+      <!-- End Sidebar-->
+      <main id="main" class="main">
+        <!-- <div class="pagetitle">
+               <h1>Dashboard</h1>
+               <nav>
+                 <ol class="breadcrumb">
+                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                   <li class="breadcrumb-item active">Dashboard</li>
+                 </ol>
+               </nav>
+               </div> -->
+        <!-- End Page Title -->
+        <section
+          class="section dashboard"
+          style="
+            padding-left: 23px;
+            padding-right: 43px;
+            padding-top: 25.9px;
+            background: white;
+          "
+        >
+          <span class="notifications-text"> Notifications </span>
+          <div class="filters-section">
+            <span class="notifications-options-menu">
+              <span class="text-style-1">Dashboard</span>
+              <span class="active-class-styles"> / Notifications </span>
+            </span>
+            <div class="filter-by-section filter-by-desktop">
+              <span class="filter-by" style="margin-right: 10.5px">
+                Filter by:
+              </span>
+              <select
+                name="cars"
+                class="select-filter-dropdown"
+                style="position: relative; bottom: 7px"
+              >
+                <option value="All">All</option>
+                <option value="All">All</option>
+                <option value="All">All</option>
+                <option value="All">All</option>
+              </select>
+              <button
+                class="mark-all-read-btn filter-by"
+                style="
+                  display: flex;
+                  margin-right: 21.5px;
+                  position: relative;
+                  bottom: 7px;
+                "
+              >
+                <img
+                  src="./assets/icons/Icon awesome-check-double.svg"
+                  style="margin-right: 10px"
+                />Mark as all Read
+              </button>
+              <span class="filter-by" style="margin-right: 15.9px">
+                Select All
+              </span>
+              <input
+                type="checkbox"
+                class="select-all-checkbox"
+                style="height: 20px; width: 20px; margin-right: 27.3px"
+              />
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                class="delete-icon"
+                style="position: relative; bottom: 7px"
+              />
+            </div>
+            <!-- filter-by-mobile -->
+            <div class="filter-by-section filter-by-mobile">
+              <div class="mark-all-section">
+                <label class="filter-by" style="margin-right: 10.5px" for="cars"
+                  >Filter by:</label
+                >
+                <select
+                  name="cars"
+                  class="select-filter-dropdown"
+                  style="position: relative; bottom: 7px"
+                >
+                  <option value="All">All</option>
+                  <option value="All">All</option>
+                  <option value="All">All</option>
+                  <option value="All">All</option>
+                </select>
+                <button
+                  class="mark-all-read-btn filter-by"
+                  style="
+                    display: flex;
+                    margin-right: 21.5px;
+                    position: relative;
+                    bottom: 7px;
+                  "
+                >
+                  <img
+                    src="./assets/icons/Icon awesome-check-double.svg"
+                    style="margin-right: 10px"
+                  />Mark as all Read
+                </button>
+              </div>
+              <!-- <span>
+                            Select All
+                        </span> -->
+              <div class="select-all-section">
+                <div>
+                  <label
+                    class="filter-by mobile-margin"
+                    style="margin-right: 15.9px"
+                    for="select-all-box"
+                    >Select All</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="select-all-checkbox"
+                    style="height: 20px; width: 20px; margin-right: 27.3px"
+                    name="select-all-box"
+                  />
+                </div>
+                <img
+                  src="./assets/icons/🔍-Product-Icons.svg"
+                  class="delete-icon mobile-margin"
+                  style=" width: 16.31px; height: 32px"
+                />
+              </div>
+            </div>
+            <!-- filter-by-mobile -->
+          </div>
+          <span class="Today"> Today </span>
+          <div class="notification-container" style="margin-top: 24px">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  David Heree
+                  <span class="text-style-1">joined to</span>
+                  Final Presentation
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <div class="notification-container">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  David Heree
+                  <span class="text-style-1">joined to</span>
+                  Final Presentation
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <div class="notification-container">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positiveCollegeStudents2.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  David Heree
+                  <span class="text-style-1">joined to</span>
+                  Final Presentation
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <div class="notification-container">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  David Heree
+                  <span class="text-style-1">joined to</span>
+                  Final Presentation
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <span class="Today"> Yesterday </span>
+          <div class="notification-container" style="margin-top: 24px">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positiveCollege.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  Jess Radon
+                  <span class="text-style-1">
+                    joined to Final Presentation</span
+                  >
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <div class="notification-container" style="margin-top: 24px">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  David Heree
+                  <span class="text-style-1">joined to</span>
+                  Final Presentation
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <div class="notification-container" style="margin-top: 24px">
+            <div class="avatar-section">
+              <img
+                src="./assets/icons/positive-college-student-has-dark-skin-carries-folders-book-points-with-cheerful-expression-aside-ha@3x.jpg"
+                style="height: 42px; width: 42px"
+              />
+              <div style="margin-left: 19.5px">
+                <span class="David-Heree-joined-to-Final-Presentation">
+                  David Heree
+                  <span class="text-style-1">joined to</span>
+                  Final Presentation
+                </span>
+                <span class="h-ago-Social-Media-Plan">
+                  2h ago ~ Social Media Plan
+                </span>
+              </div>
+            </div>
+            <div class="avatar-icons-section" style="display: flex">
+              <div class="grey-box"></div>
+              <img
+                src="./assets/icons/🔍-Product-Icons.svg"
+                style="width: 16.3px; height: 19.9px"
+              />
+            </div>
+          </div>
+          <hr style="background: #cdd6de" />
+          <div class="entries-section">
+            <span class="entry-text"> Showing 1 to 5 of 16 </span>
+            <div class="pagination-section">
+              <span class="Previous"> Previous </span>
+              <div
+                class="paginator-blocks custom-active-page"
+                style="margin-left: 34.8px"
+              >
+                1
+              </div>
+              <div class="paginator-blocks">2</div>
+              <div class="paginator-blocks">3</div>
+              <span class="Previous" style="color: #000; margin-left: 15px">
+                Next
+              </span>
+            </div>
+          </div>
+          <!-- Left side columns -->
+          <!-- End Left side columns -->
+          <!-- Right side columns -->
+          <!-- End Right side columns -->
+        </section>
+      </main>
+      <!-- End #main -->
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libraries/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/libraries/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/dashboard/dashboard-main.js"></script>
+    <script src="assets/libraries/apexcharts/apexcharts.min.js"></script>
+  </body>
+</html>
